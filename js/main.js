@@ -10,3 +10,23 @@ function initMap() {
     map: map,
   });
 }
+
+// Smooth Scrolling (hash #)
+// we target the links 'a' clicked in the navbar
+// .btn for the read more
+
+$("#navbar a, .btn").on("click", function (event) {
+  if (this.hash != "") {
+    event.preventDefault();
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        // scroll to the id clicked -100px
+        scrollTop: $(hash).offset().top - 100,
+      },
+      //speed 800ms
+      800
+    );
+  }
+});

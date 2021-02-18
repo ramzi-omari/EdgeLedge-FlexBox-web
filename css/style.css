@@ -162,7 +162,7 @@ p {
   /* Overlay */
   position: absolute;
   /* 60 is the height of the nav */
-  top: 60px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
