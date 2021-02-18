@@ -11,7 +11,16 @@ function initMap() {
   });
 }
 
-// Smooth Scrolling (hash #)
+// navbar opacity when scroll down
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 150) {
+    document.querySelector("#navbar").style.opacity = 0.9;
+  } else {
+    document.querySelector("#navbar").style.opacity = 1;
+  }
+});
+
+//*** Smooth Scrolling (hash #)
 // we target the links 'a' clicked in the navbar
 // .btn for the read more
 
