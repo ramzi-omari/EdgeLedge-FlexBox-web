@@ -146,6 +146,7 @@ p {
 
 /* Showcase */
 #showcase {
+  position: relative;
   background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #fff;
@@ -162,7 +163,7 @@ p {
   /* Overlay */
   position: absolute;
   /* 60 is the height of the nav */
-  top: 65px;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
